@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div id="container">
+        <input type="text" id="input" readonly>
+
+        <div class="container1">
+            <!-- first row -->
+            <label for="">
+                <input type="button" value="C" onclick="clearInput()">
+            </label>
+            <label for="">
+                <input type="button" value="%" onclick="appendValue('%')">
+            </label>
+
+            <label for="">
+                <input type="button" value="⌫" onclick="backSpace()">
+            </label>
+
+            <label for="">
+                <input type="button" value="/" onclick="appendValue('/')">
+            </label>
+
+            <!-- second row -->
+
+            <label for="">
+                <input type="button" value="7" onclick="appendValue('7')">
+            </label>
+            <label for="">
+                <input type="button" value="8" onclick="appendValue('8')">
+            </label>
+
+            <label for="">
+                <input type="button" value="9" onclick="appendValue('9')">
+            </label>
+
+            <label for="">
+                <input type="button" value="*" onclick="appendValue('*')">
+            </label>
+
+            <!-- Third row -->
+
+
+            <label for="">
+                <input type="button" value="4" onclick="appendValue('4')">
+            </label>
+            <label for="">
+                <input type="button" value="5" onclick="appendValue('5')">
+            </label>
+
+            <label for="">
+                <input type="button" value="6" onclick="appendValue('6')">
+            </label>
+
+            <label for="">
+                <input type="button" value="-" onclick="appendValue('-')">
+            </label>
+
+            <!-- Fourth row -->
+            <label for="">
+                <input type="button" value="1" onclick="appendValue('1')">
+            </label>
+            <label for="">
+                <input type="button" value="2" onclick="appendValue('2')">
+            </label>
+
+            <label for="">
+                <input type="button" value="3" onclick="appendValue('3')">
+            </label>
+
+            <label for="">
+                <input type="button" value="+" onclick="appendValue('+')">
+            </label>
+
+            <!-- Fifth row -->
+
+            <label for="">
+                <input type="button" value="00" onclick="appendValue('00')">
+            </label>
+            <label for="">
+                <input type="button" value="0" onclick="appendValue('0')">
+            </label>
+
+            <label for="">
+                <input type="button" value="." onclick="appendValue('.')">
+            </label>
+
+            <label for="">
+                <input type="button" value="=" onclick="calculate()">
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
